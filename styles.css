@@ -1,0 +1,209 @@
+*{
+  box-sizing:border-box;
+}
+
+body {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  line-height: 1.5em;
+}
+a {
+  color: #000000;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+nav-link {
+  text-decoration: none;
+  color: #000000;
+}
+nav ul li:not(:last-of-type) {
+  margin-right: 40px;
+}
+
+nav {
+  display: inline-block;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 2px 3px 2px #f1f1f1;
+  z-index: 5;
+}
+
+#header-img {
+  width: 100px;
+}
+
+.content{
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+#subscribe {
+  width: 900px;
+  margin:  0 auto;
+  text-align: center;
+  margin-top: 200px;
+}
+
+h1 {
+  font-size: 250%;
+}
+
+#subscribe form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#subscribe input {
+  margin: 10px 0;
+}
+#subscribe input[type='submit'] {
+  width: 30%;
+  color: #f1f1f1;
+  background-color: #000000;
+  border: none;
+  padding: 10px 0; 
+  font-size: 110%;
+}
+#subscribe input[type='email'] {
+  width: 70%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #302d2d;
+  background-color: transparent; 
+  font-size: 110%;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  padding: 10px;
+}
+
+#main-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.feature {
+  padding: 2%;
+    border: 1px solid black;  
+    margin: 50px;
+    text-align: center;
+    color: black;
+    line-height: 200%;
+    flex: 1 1 0px; 
+    background-color: white; 
+}
+
+#main-reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.testimonial {
+  padding: 2%;
+    border: 1px solid black;  
+    margin: 50px;
+    text-align: center;
+    color: black;
+    line-height: 100%;
+    flex: 1 1 0px; 
+    background-color: white;
+}
+#preview-video {
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+#product-title {
+  font-size: 30px;
+  margin: 0px 25px;
+}
+#product-desc {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+#video{
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border: #cd3535;
+  border-style: double;
+  border-width: 8px;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  line-height: .8rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  box-shadow: 0 -3px 2px -3px #cac8c8;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+.foot a {
+ margin: 10px;
+}
+
+@media (max-width: 610px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #nav-bar {
+    width: 100%;
+  }
+  nav ul {
+    justify-content: center;
+    padding-left: 0;
+  }
+  body {
+    margin: 5px;
+  }
+ .content {
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 0;
+  padding-right: 0;
+  }
+  #subscribe {
+    width: 300px;
+  }
+  #subscribe form {
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  }
+  h1 {
+    line-height: 2.2rem;
+  }
+  #subscribe input[type='submit'] {
+    font-size: 70%;
+    align-items: center;
+  }
+  #product-title {
+    line-height: 2.2rem;
+  }
+  #video {
+  justify-content: center;
+  max-width: 90%;
+  }
+}
